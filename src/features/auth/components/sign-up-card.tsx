@@ -26,7 +26,7 @@ export const SignUpCard = () => {
   })
 
   const submitEvent = (data: SignUpFormValues) => {
-    console.log({ data })
+    console.log(data)
   }
 
   return (

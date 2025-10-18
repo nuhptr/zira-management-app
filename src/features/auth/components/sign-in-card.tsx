@@ -25,11 +25,11 @@ export const SignInCard = () => {
   })
 
   const submitEvent = (data: SignInFormValues) => {
-    console.log({ data })
+    console.log(data)
   }
 
   return (
-    <Card className="w-full h-full md:w-[487px] border-none shadow-none tracking-wide">
+    <Card className="w-full h-full md:w-[487px] border-none shadow-none">
       <CardHeader className="flex items-center justify-center text-center px-7 py-6">
         <CardTitle className="text-2xl">Welcome back!</CardTitle>
       </CardHeader>
