@@ -1,3 +1,7 @@
+import { FcGoogle } from "react-icons/fc"
+import { FaGithub } from "react-icons/fa"
+
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
@@ -13,8 +17,41 @@ export const SignInCard = () => {
       </div>
       <CardContent className="p-7">
         <form className="space-y-4">
-          <Input required />
+          <Input
+            required
+            type="email"
+            value={""}
+            onClick={() => {}}
+            placeholder="Enter email address"
+            disabled={false}
+          />
+          <Input
+            required
+            type="password"
+            value={""}
+            onClick={() => {}}
+            placeholder="Enter your password"
+            disabled={false}
+            min={8}
+            max={256}
+          />
+          <Button disabled={false} size={"lg"} className="w-full">
+            Login
+          </Button>
         </form>
+      </CardContent>
+      <div className="px-7">
+        <Separator isDotted />
+      </div>
+      <CardContent className="p-7 flex flex-col gap-y-4">
+        <Button variant={"secondary"} size={"lg"} className="w-full" disabled={false}>
+          <FcGoogle className="mr-2 size-5" />
+          Login with Google
+        </Button>
+        <Button variant={"secondary"} size={"lg"} className="w-full" disabled={false}>
+          <FaGithub className="mr-2 size-5" />
+          Login with Github
+        </Button>
       </CardContent>
     </Card>
   )
