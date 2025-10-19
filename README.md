@@ -15,3 +15,9 @@ Component list need update to new styles (adding comment in every component)
 ```bash
 bun add react-icons
 ```
+
+### Adding Hono For API
+
+```bash
+bun add hono
+```
